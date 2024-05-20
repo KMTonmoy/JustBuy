@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Smartphone X",
+        "image": "https://via.placeholder.com/300",
+        "description": "Latest model of Smartphone X with advanced features and sleek design.",
+        "price": 1000,
+        "discount": 60,
+        "category": "electronics"
+    },
+    {
+        "id": 2,
+        "title": "Stylish Dress",
+        "image": "https://via.placeholder.com/300",
+        "description": "Elegant and stylish dress perfect for any occasion.",
+        "price": 80,
+        "discount": 30,
+        "category": "women's fashion"
+    },
+    {
+        "id": 3,
+        "title": "Luxury Watch",
+        "image": "https://via.placeholder.com/300",
+        "description": "A luxury watch that combines timeless elegance with modern technology.",
+        "price": 500,
+        "discount": 25,
+        "category": "accessories"
+    },
+    {
+        "id": 4,
+        "title": "Designer Handbag",
+        "image": "https://via.placeholder.com/300",
+        "description": "A designer handbag made from premium materials.",
+        "price": 300,
+        "discount": 50,
+        "category": "women's fashion"
+    }
+]

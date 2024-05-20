@@ -14,11 +14,11 @@ const TopNavbar = () => {
             <div className="container mx-auto px-6 flex justify-between items-center">
                 <div className="hidden md:flex space-x-6">
                     <ul className="flex space-x-6">
-                        <li><a href="#" className="hover:text-gray-400">Home</a></li>
-                        <li><a href="#" className="hover:text-gray-400">Shop</a></li>
-                        <li><a href="#" className="hover:text-gray-400">Deals</a></li>
-                        <li><a href="#" className="hover:text-gray-400">Categories</a></li>
-                        <li><a href="#" className="hover:text-gray-400">Contact</a></li>
+                        <li><NavLink to={'/'} href="#" className="hover:text-gray-400">Home</NavLink></li>
+                        <li><NavLink to={'/'} href="#" className="hover:text-gray-400">Shop</NavLink></li>
+                        <li><NavLink to={'/'} href="#" className="hover:text-gray-400">Deals</NavLink></li>
+                        <li><NavLink to={'/'} href="#" className="hover:text-gray-400">Categories</NavLink></li>
+                        <li><NavLink to={'/'} href="#" className="hover:text-gray-400">Contact</NavLink></li>
                     </ul>
                 </div>
 
@@ -29,24 +29,23 @@ const TopNavbar = () => {
                 </div>
 
                 <div className="flex space-x-6">
-                    <NavLink to={'/'} className="hover:text-gray-400">Login</NavLink>
-                    <NavLink to={'/'} className="hover:text-gray-400">Sign Up</NavLink>
+                    <NavLink to={'/login'} className="hover:text-gray-400">Login</NavLink>
+                    <NavLink to={'/signup'} className="hover:text-gray-400">Sign Up</NavLink>
                 </div>
             </div>
 
             {/* Dropdown Menu */}
             <div
-                className={`md:hidden bg-gray-800 overflow-hidden transition-max-height duration-500 ease-in-out ${
-                    isDropdownOpen ? 'max-h-screen' : 'max-h-0'
-                }`}
+                className={`md:hidden bg-gray-800 overflow-hidden transition-max-height duration-500 ease-in-out ${isDropdownOpen ? 'max-h-screen' : 'max-h-0'
+                    }`}
             >
                 <ul className="flex flex-col space-y-2 px-4 py-2">
-                    <li><a href="#" className="hover:text-gray-400">Home</a></li>
-                    <li><a href="#" className="hover:text-gray-400">Shop</a></li>
-                    <li><a href="#" className="hover:text-gray-400">Deals</a></li>
-                    <li><a href="#" className="hover:text-gray-400">Categories</a></li>
-                    <li><a href="#" className="hover:text-gray-400">Contact</a></li>
-                    <li><a href="#" className="hover:text-gray-400">Login</a></li>
+                    <li><NavLink to={'/'} href="#" className="hover:text-gray-400">Home</NavLink></li>
+                    <li><NavLink to={'/'} href="#" className="hover:text-gray-400">Shop</NavLink></li>
+                    <li><NavLink to={'/'} href="#" className="hover:text-gray-400">Deals</NavLink></li>
+                    <li><NavLink to={'/'} href="#" className="hover:text-gray-400">Categories</NavLink></li>
+                    <li><NavLink to={'/'} href="#" className="hover:text-gray-400">Contact</NavLink></li>
+
                 </ul>
             </div>
         </nav>
