@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 const AllProducts = () => {
     const [products, setProducts] = useState([]);
+    const [visibleProducts, setVisibleProducts] = useState([]);
+    const [showAll, setShowAll] = useState(false);
 
     useEffect(() => {
         // Fetch data from API or JSON file
@@ -9,11 +11,25 @@ const AllProducts = () => {
             .then(response => response.json())
             .then(data => {
                 setProducts(data);
+                setVisibleProducts(data.slice(0, 12)); // Initially display 8 products
             })
             .catch(error => {
                 console.error('Error fetching data:', error);
             });
     }, []);
+
+    const loadMore = () => {
+        const newVisibleProducts = products.slice(0, visibleProducts.length + 8);
+        setVisibleProducts(newVisibleProducts);
+        if (newVisibleProducts.length >= products.length) {
+            setShowAll(true);
+        }
+    };
+
+    const showLess = () => {
+        setVisibleProducts(products.slice(0, 12));
+        setShowAll(false);
+    };
 
     return (
         <div className="container mx-auto px-4 py-10">
@@ -21,7 +37,7 @@ const AllProducts = () => {
                 All Products
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                {products.map((product, index) => {
+                {visibleProducts.map((product, index) => {
                     // Calculate discounted price
                     const discountedPrice = product.price - (product.price * (product.discount / 100));
                     return (
@@ -41,6 +57,18 @@ const AllProducts = () => {
                         </div>
                     );
                 })}
+            </div>
+            <div className="flex justify-center mt-4">
+                {!showAll && visibleProducts.length < products.length && (
+                    <button onClick={loadMore} className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">
+                        Show More
+                    </button>
+                )}
+                {showAll && (
+                    <button onClick={showLess} className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">
+                        Show Less
+                    </button>
+                )}
             </div>
         </div>
     );

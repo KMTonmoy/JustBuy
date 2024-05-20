@@ -1,17 +1,14 @@
 [
     {
         "id": 1,
-        "title": "Beautiful Sunset",
-        "url": "https://via.placeholder.com/800x400?text=Beautiful+Sunset"
+        "url": "https://icms-image.slatic.net/images/ims-web/cd9e7fc9-91c2-4e02-ac4a-ec04d6c352a5.jpg_1200x1200.jpg"
     },
     {
         "id": 2,
-        "title": "Mountain Landscape",
-        "url": "https://via.placeholder.com/800x400?text=Mountain+Landscape"
+        "url": "https://icms-image.slatic.net/images/ims-web/8f822d77-1a90-4201-a5d4-0b4b9afc7f5a.jpg"
     },
     {
         "id": 3,
-        "title": "Ocean View",
-        "url": "https://via.placeholder.com/800x400?text=Ocean+View"
+        "url": "https://icms-image.slatic.net/images/ims-web/db63fb5e-a258-49e0-b539-c14144294f46.jpg"
     }
 ]

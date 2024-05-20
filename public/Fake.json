@@ -34,5 +34,140 @@
         "price": 300,
         "discount": 50,
         "category": "women's fashion"
+    },
+    {
+        "id": 5,
+        "title": "Smartwatch Z",
+        "image": "https://via.placeholder.com/300",
+        "description": "Smartwatch Z with health tracking features and long battery life.",
+        "price": 200,
+        "discount": 40,
+        "category": "electronics"
+    },
+    {
+        "id": 6,
+        "title": "Casual T-Shirt",
+        "image": "https://via.placeholder.com/300",
+        "description": "Comfortable and casual t-shirt for everyday wear.",
+        "price": 25,
+        "discount": 20,
+        "category": "men's fashion"
+    },
+    {
+        "id": 7,
+        "title": "Sunglasses",
+        "image": "https://via.placeholder.com/300",
+        "description": "Stylish sunglasses to protect your eyes from the sun.",
+        "price": 50,
+        "discount": 15,
+        "category": "accessories"
+    },
+    {
+        "id": 8,
+        "title": "Leather Wallet",
+        "image": "https://via.placeholder.com/300",
+        "description": "A classic leather wallet with multiple card slots and compartments.",
+        "price": 70,
+        "discount": 10,
+        "category": "accessories"
+    },
+    {
+        "id": 9,
+        "title": "Fitness Tracker",
+        "image": "https://via.placeholder.com/300",
+        "description": "Track your fitness goals with this advanced fitness tracker.",
+        "price": 120,
+        "discount": 20,
+        "category": "electronics"
+    },
+    {
+        "id": 10,
+        "title": "Formal Shirt",
+        "image": "https://via.placeholder.com/300",
+        "description": "A crisp and elegant formal shirt for professional occasions.",
+        "price": 60,
+        "discount": 25,
+        "category": "men's fashion"
+    },
+    {
+        "id": 11,
+        "title": "Wireless Headphones",
+        "image": "https://via.placeholder.com/300",
+        "description": "Enjoy high-quality sound with these wireless headphones.",
+        "price": 150,
+        "discount": 30,
+        "category": "electronics"
+    },
+    {
+        "id": 12,
+        "title": "Summer Dress",
+        "image": "https://via.placeholder.com/300",
+        "description": "Light and airy dress perfect for summer days.",
+        "price": 70,
+        "discount": 20,
+        "category": "women's fashion"
+    },
+    {
+        "id": 13,
+        "title": "Bracelet Set",
+        "image": "https://via.placeholder.com/300",
+        "description": "A set of stylish bracelets to complement any outfit.",
+        "price": 40,
+        "discount": 10,
+        "category": "accessories"
+    },
+    {
+        "id": 14,
+        "title": "Messenger Bag",
+        "image": "https://via.placeholder.com/300",
+        "description": "A versatile messenger bag for work or casual outings.",
+        "price": 90,
+        "discount": 15,
+        "category": "accessories"
+    },
+    {
+        "id": 15,
+        "title": "Running Shoes",
+        "image": "https://via.placeholder.com/300",
+        "description": "Lightweight and comfortable shoes for running or jogging.",
+        "price": 80,
+        "discount": 20,
+        "category": "men's fashion"
+    },
+    {
+        "id": 16,
+        "title": "Earrings",
+        "image": "https://via.placeholder.com/300",
+        "description": "Beautiful earrings to add a touch of elegance to any outfit.",
+        "price": 30,
+        "discount": 10,
+        "category": "accessories"
+    },
+    {
+        "id": 17,
+        "title": "Gaming Console",
+        "image": "https://via.placeholder.com/300",
+        "description": "Experience immersive gaming with this advanced gaming console.",
+        "price": 400,
+        "discount": 50,
+        "category": "electronics"
+    },
+    {
+        "id": 18,
+        "title": "Winter Jacket",
+        "image": "https://via.placeholder.com/300",
+        "description": "Stay warm and stylish with this cozy winter jacket.",
+        "price": 120,
+        "discount": 25,
+        "category": "men's fashion"
+    },
+    {
+        "id": 19,
+        "title": "Diamond Necklace",
+        "image": "https://via.placeholder.com/300",
+        "description": "A stunning diamond necklace that adds sparkle to any look.",
+        "price": 1000,
+        "discount": 20,
+        "category": "accessories"
     }
 ]
