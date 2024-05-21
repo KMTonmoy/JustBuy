@@ -6,7 +6,7 @@ const Mens = () => {
     const [showAll, setShowAll] = useState(false);
 
     useEffect(() => {
-        fetch('Fake.json')
+        fetch('http://localhost:5000/alldata')
             .then(response => response.json())
             .then(data => {
                 setProducts(data);

@@ -1,25 +1,31 @@
 import React, { useState, useEffect } from 'react';
+import { useQuery } from '@tanstack/react-query';
+
+const fetchProducts = async () => {
+    const response = await fetch('http://localhost:5000/alldata');
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    return response.json();
+};
 
 const AllProducts = () => {
-    const [products, setProducts] = useState([]);
+    const { data: products = [], isLoading, error } = useQuery({
+        queryKey: ['products'],
+        queryFn: fetchProducts
+    });
+
     const [visibleProducts, setVisibleProducts] = useState([]);
     const [showAll, setShowAll] = useState(false);
 
     useEffect(() => {
-        // Fetch data from API or JSON file
-        fetch('Fake.json')
-            .then(response => response.json())
-            .then(data => {
-                setProducts(data);
-                setVisibleProducts(data.slice(0, 12)); // Initially display 8 products
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
-    }, []);
+        if (products.length > 0) {
+            setVisibleProducts(products.slice(0, 12)); // Initially display 12 products
+        }
+    }, [products]);
 
     const loadMore = () => {
-        const newVisibleProducts = products.slice(0, visibleProducts.length + 8);
+        const newVisibleProducts = products.slice(0, visibleProducts.length + 4);
         setVisibleProducts(newVisibleProducts);
         if (newVisibleProducts.length >= products.length) {
             setShowAll(true);
@@ -30,6 +36,9 @@ const AllProducts = () => {
         setVisibleProducts(products.slice(0, 12));
         setShowAll(false);
     };
+
+    if (isLoading) return <div>Loading...</div>;
+    if (error) return <div>Error fetching data</div>;
 
     return (
         <div className="container mx-auto px-4 py-10">
